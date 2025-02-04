@@ -421,8 +421,11 @@ a{
         width: 280px;
     }
     .cont{
-        width: 350px;
+        
         overflow-x: hidden;
+    }
+    .cont2{
+        width: 340px;
     }
     .about h1{
         font-size: 30px;
@@ -437,7 +440,7 @@ a{
         overflow-x: hidden !important;
     }
     .homeimg{
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     .para{
         width:300px;
@@ -457,4 +460,11 @@ a{
         width: 280px;
        
     }
+    .cont2{
+        width: fit-content;
+    }
+    .contact{
+        margin:5px
+    }
+    
 }
