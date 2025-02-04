@@ -443,6 +443,9 @@ a{
         width:300px;
         font-size: 0px;
     }
+    .para h1,.para1{
+        margin:auto 20px ;
+    }
     form{
         width:250px;
         margin: 10px;
