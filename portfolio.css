@@ -362,7 +362,7 @@ a{
         width: 400px;
         height: 400px;
     }
-    h1,h2{
+    .about h1,.about h2{
         font-size: 27px;
     }
     .homeimg{
@@ -374,7 +374,7 @@ a{
         color: transparent;
     }
     .para{
-        width: 400px;
+        width: 350px;
     }
     .head{
         flex-direction: column-reverse;
@@ -442,9 +442,6 @@ a{
     .para{
         width:300px;
         font-size: 0px;
-    }
-    .para h1,.para1{
-        margin:auto 20px ;
     }
     form{
         width:250px;
