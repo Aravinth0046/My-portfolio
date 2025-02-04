@@ -4,7 +4,8 @@
     margin: 0px;
     padding: 0px;
 }
-body{overflow-x: hidden;
+body{
+    overflow-x: hidden;
     scroll-behavior: smooth;
     background: rgb(208,171,229);
 background: radial-gradient(circle, rgba(208,171,229,1) 0%, rgba(197,255,254,0.9954832274706757) 100%);
@@ -54,9 +55,10 @@ background: radial-gradient(circle, rgba(208,171,229,1) 0%, rgba(197,255,254,0.9
     color:black;
 }
 
-#about-hr{
+#about-hr, #about-hr1{
     color: transparent;
     margin: 50px auto 100px auto;
+    border: 0;
 }
 
 #about{
@@ -89,12 +91,14 @@ background: radial-gradient(circle, rgba(208,171,229,1) 0%, rgba(197,255,254,0.9
     top: 250px;
     font-weight: bold;
     z-index: -1;
+    font-size: 50px;
 }
 .about h2{
     position: relative;
     top: 240px;
     font-weight: bold;
     z-index: -1;
+    font-size: 40px;
 }
 svg :hover{
     cursor: pointer;
@@ -117,6 +121,8 @@ background: radial-gradient(circle, rgba(208,171,229,1) 0%, rgba(197,255,254,0.9
     font-size:30px;
     font-style: normal;
 }
+
+
 .para1{
     display: flex;
     justify-content: center;
@@ -232,10 +238,11 @@ form textarea::placeholder ,form input::placeholder{
     font-size: 40px;
 
 }
-.para ul{
+.para-ul{
     margin-top: 50px;
     font-family: 'Ubuntu', seri;
     font-size: 20px;
+    margin-left: 20px;
 }
 .para h4{
     font-family:'Italianno', serif; 
@@ -273,4 +280,181 @@ a{
 .button:hover{
     border:  solid  rgba(0, 225, 255, 0.995);
     background: rgb(213, 139, 255);
+}
+@media(max-width:1025px) {
+    .para{
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .para1{
+        width: fit-content;
+    }
+    h1{
+        font-size: 50px;
+    }
+    body .contact{
+        /* width: 1024px; */
+        overflow-x: hidden;
+    }
+    .cont2 {
+        position: relative;
+        left: 420px;
+        width: 500px;
+    }
+    .ta,.ta1{
+        width:400px
+    }
+    .button{
+        margin-right: 180px;
+    }
+    .fin{
+        width: 400px;
+        margin-left: 90px;
+        font-size: large;
+        text-align: center;
+    }
+}
+@media(max-width:770px){
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont2{
+        left: 0;
+    }
+
+    .fin{
+        top: 0;
+        right: 0;
+        margin: 20px 0 10px 0;
+    } 
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+    }  
+    .profile{
+        margin: 0;
+    }
+    .para{
+        width: 500px;
+        margin-top: 30px;
+    }
+    ul{
+        margin-top:10px;
+    }
+}
+@media(max-width:430px){
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home{
+        overflow-x: hidden !important;
+        box-sizing: border-box;
+        
+    }
+    .homeimg svg{
+        width: 400px;
+        height: 400px;
+    }
+    h1,h2{
+        font-size: 27px;
+    }
+    .homeimg{
+        width: 250px;
+        overflow-x: hidden !important;
+        
+    }
+    #about-hr{
+        color: transparent;
+    }
+    .para{
+        width: 400px;
+    }
+    .head{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .head a{
+        margin-right: 10px;
+        font-size:25px;
+    }
+    form{
+        width: fit-content;
+    }
+    /* .cont2{
+        margin
+    } */
+    .ta,.ta1{
+        width: 300px;
+    }
+    .button{
+        margin-right:120px ;
+    }
+    .cont{
+        margin-right:0 ;
+    }
+    .logo a{
+        margin-right: 0;
+    }
+    .profile{
+        width: 250px;
+    }
+}
+@media(max-width:380px) {
+    .home{
+        overflow-x: hidden;
+
+    }
+    .para{
+        width: 350px;
+    }
+    .fin{
+        width: 280px;
+    }
+    .cont{
+        width: 350px;
+        overflow-x: hidden;
+    }
+    .about h1{
+        font-size: 30px;
+    }
+    .about h2{
+        font-size: 30px;
+    }
+
+}
+@media(max-width:325px){
+    .home{
+        overflow-x: hidden !important;
+    }
+    .homeimg{
+        overflow-x: hidden;
+    }
+    .para{
+        width:300px;
+        font-size: 0px;
+    }
+    form{
+        width:250px;
+        margin: 10px;
+    }
+    .ta,.ta1{
+        width: 220px;
+    }
+    .button{
+        margin-right: 90px;
+    }
+    .fin{
+        width: 280px;
+       
+    }
 }
