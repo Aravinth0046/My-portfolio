@@ -366,7 +366,7 @@ a{
         font-size: 27px;
     }
     .homeimg{
-        width: 250px;
+        width: 300px;
         overflow-x: hidden !important;
         
     }
@@ -407,6 +407,10 @@ a{
     }
     .profile{
         width: 250px;
+    }
+     .cont2{
+        width: 400px;
+        overflow-x: hidden;
     }
 }
 @media(max-width:380px) {
